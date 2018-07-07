@@ -25,7 +25,7 @@
                 <td>
                   <router-link to="{name : 'heroedit', parmas : {id:item.id}}">edit</router-link>
                   &nbsp;&nbsp;
-                  <a href="#" @click.prevent="handleDelete(item.id)">delete</a>
+                  <a href="#" @click.prevent="handleDelete(1)">delete</a>
                 </td>
               </tr>
             </tbody>
@@ -76,7 +76,7 @@
             } else {
               alert('删除失败');
             }
-          })
+          });
        }
      }
    } 

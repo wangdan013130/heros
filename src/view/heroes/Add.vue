@@ -10,7 +10,7 @@
                 <label for="sex">英雄性别</label>
                 <input type="text"  v-model="formData.gender" class="form-control" id="sex" placeholder="英雄性别">
             </div>
-            <button type="submit" @click.prevent="handleAdd" class="btn btn-success">Submit</button>
+            <button type="submit" @click.prevent="handleAdd()" class="btn btn-success">Submit</button>
         </form>
     </div>
 </template>

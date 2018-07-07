@@ -25,11 +25,7 @@
                     gender : ''
                 }
             }
-        },
-        created () {
-                
         }
-        
     }
 </script>
 
