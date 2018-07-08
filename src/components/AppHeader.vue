@@ -11,19 +11,16 @@
                 <a class="navbar-brand" href="#">CRUD</a>
             </div>
         </div>
-    </nav>
+  </nav>
 </template>
 
 <script>
-export default {
-    data () {
-        return {
-            
-        };
+    export default {
+        
     }
-};
 </script>
 
 <style>
 
 </style>
+

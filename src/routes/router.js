@@ -1,32 +1,29 @@
-// 1 导入vue-router
-import vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
 
-vue.use(VueRouter)
+import VueRouter from 'vue-router';
 
-// 导入组件
-import HeroesList from '../view/heroes/List.vue'
-import EquipList  from '../view/equips/List.vue'
-import WeaposList from '../view/weapons/List.vue'
-import AddList from '../view/heroes/Add.vue'
-import HeroEdit from '../view/heroes/Edit.vue'
+// 1. 导入组件
+import HeroesList from '../view/heroes/List.vue';
+import EquipsList from '../view/equips/List.vue';
+import WeaponsList from '../view/weapons/List.vue';
+import HeroesAdd from '../view/heroes/add.vue';
+import HeroEdit from '../view/heroes/edit.vue';
+// 2 设置路由并配置
 
-// 2 创建路由对象,配置路由规则
+// 注册插件
+Vue.use(VueRouter);
+
 const router = new VueRouter({
-    linkActiveClass : 'active',
-    routes : [
-         
-        // 配置根路径
-        {path : 'home',path : '/', redirect : '/heroes' },
-
-        // 路由规则
-        {name : 'heroes', path : '/heroes', component : HeroesList},
-        {name : 'equips',path : '/equips', component : EquipList},
-        {name : 'weapons', path : '/weapons', component : WeaposList},
-        {name : 'add', path : '/heroes/add', component : AddList},
-        {name : 'heroedit',path : '/heros/edit/:id', component : HeroEdit}
+    // 添加点击高亮效果
+    linkActiveClass: 'active',
+    routes: [
+        {name : 'home', path : '/', redirect : '/heroes'},
+        {name : 'heros', path :'/heroes', component : HeroesList},
+        {name : 'equips', path : '/equips', component : EquipsList},
+        {name : 'weapons', path : '/weapons', component : WeaponsList},
+        {name : 'heroadd', path :'/heroes/add', component : HeroesAdd},
+        {name : 'heroedit', path : '/heroes/edit/:id', component : HeroEdit}
     ]
 })
-
 // 3 导出路由
 export default router;

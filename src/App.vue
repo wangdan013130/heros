@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row">
       <!-- 侧边栏 -->
-        <app-silder></app-silder>
+       <app-silder></app-silder>
       </div>
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         <!-- 右侧列表项 -->
